@@ -11,6 +11,9 @@ import Pricing from './routes/Pricing.jsx';
 import Blog from './routes/Blog.jsx';
 import BlogPost from './routes/BlogPost.jsx';
 import Contact from './routes/Contact.jsx';
+import PrivacyPolicy from './routes/PrivacyPolicy.jsx';
+import Legal from './routes/Legal.jsx';
+import TermsOfService from './routes/TermsOfService.jsx';
 
 export default function App() {
   return (
@@ -27,6 +30,9 @@ export default function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/:slug" element={<BlogPost />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/legal" element={<Legal />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />

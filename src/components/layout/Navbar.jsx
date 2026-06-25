@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import Button from '../ui/Button.jsx';
+import Logo from '../ui/Logo.jsx';
 
 const navItems = [
   ['Home', '/'],
@@ -29,7 +30,7 @@ export default function Navbar() {
     <header className="site-header">
       <nav className="container nav-bar" aria-label="Main navigation">
         <Link className="brand" to="/" aria-label="Hexadigitals home" onClick={handleNavigation}>
-          <span className="brand-mark">H</span>
+          <Logo />
           <span>Hexadigitals</span>
         </Link>
         <div className="nav-links">
